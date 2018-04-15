@@ -7,6 +7,7 @@
 		<title></title>
 		<script src="js/mui.min.js"></script>
 		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
 		<script type="text/javascript" charset="utf-8">
 			mui.init({
 				subpages: [{
@@ -31,17 +32,31 @@
 				<span class="mui-tab-label">话</span>
 			</a>
 			<a class="mui-tab-item">
-				<span class="mui-icon mui-icon-image" id="code"></span>
+				<span class="mui-icon iconfont icon-erweima" id="code"></span>
 				<span class="mui-tab-label">码</span>
 			</a>
 		</nav>
 		<script type="text/javascript">
 			mui.plusReady(function() {
 				document.getElementById('word').addEventListener("tap", function() {
-					mui.toast("word")
+					subpages: [{
+						url: 'word.html', //子页面HTML地址，支持本地地址和网络地址
+						id: 'word.html', //子页面标志
+						styles: {
+							top: '45px', //子页面顶部位置
+							bottom: '45px', //子页面底部位置
+						}
+					}]
 				})
 				document.getElementById("code").addEventListener("tap", function() {
-					mui.toast("code")
+					subpages: [{
+						url: 'code.html', //子页面HTML地址，支持本地地址和网络地址
+						id: 'code.html', //子页面标志
+						styles: {
+							top: '45px', //子页面顶部位置
+							bottom: '45px', //子页面底部位置
+						}
+					}]
 				})
 			})
 		</script>
