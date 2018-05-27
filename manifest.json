@@ -125,5 +125,31 @@
 				}
 			}
 		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"word.html"
+				],
+				"refer": [
+					"code.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"css/word.css",
+				"js/mui.min.js",
+				"fonts/mui.ttf",
+				"css/iconfont.css",
+				"css/mui.min.css",
+				"fonts/iconfont.ttf",
+				"js/mui.js",
+				"css/mui.css",
+				"README.md"
+			]
+		}
 	}
 }

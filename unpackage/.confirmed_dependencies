@@ -1,0 +1,11 @@
+{
+	"index.html": {
+		"resources": [
+			"word.html"
+		],
+		"refer": [
+			"word.html",
+			"code.html"
+		]
+	}
+}
